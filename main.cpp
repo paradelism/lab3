@@ -3,15 +3,23 @@
 using namespace std;
 
 int main() {
-    int year;
-    cout << "Sign the year: ";
-    cin >> year;
+    double length, width, height;
 
-    bool leap_year = (year % 4 == 0) && (year % 100 != 0 || year % 400 == 0);
+    cout << "Calculating the volume of a parallelepiped." << endl;
 
-    int days = 365 + leap_year;
+    cout << "Enter the input data:" << endl;
+    cout << "Length (cm) -> ";
+    cin >> length;
 
-    cout << "in " << year << " year = " << days << " days" << endl;
+    cout << "Width (cm) -> ";
+    cin >> width;
+
+    cout << "Height (cm) -> ";
+    cin >> height;
+
+    double volume = length * width * height;
+
+    cout << "Volume: " << volume << " cubic cm." << endl;
 
     return 0;
 }
