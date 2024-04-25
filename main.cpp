@@ -3,15 +3,14 @@
 using namespace std;
 
 int main() {
-    int year;
-    cout << "Sign the year: ";
-    cin >> year;
+    int hryvnia, kopiyka;
+    cout << "Enter the amount: ";
+    cin >> hryvnia >> kopiyka;
 
-    bool leap_year = (year % 4 == 0) && (year % 100 != 0 || year % 400 == 0);
+    hryvnia += kopiyka / 100;
+    kopiyka %= 100;
 
-    int days = 365 + leap_year;
-
-    cout << "in " << year << " year = " << days << " days" << endl;
+    cout << "Sum in the right form: " << hryvnia << " hrn. " << kopiyka << " kop." << endl;
 
     return 0;
 }
