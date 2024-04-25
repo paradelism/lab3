@@ -5,7 +5,7 @@ using namespace std;
 int main() {
     double length, width, height;
 
-    cout << "Calculating the volume of a parallelepiped." << endl;
+    cout << "Calculating the volume of a parallelepipedd." << endl;
 
     cout << "Enter the input data:" << endl;
     cout << "Length (cm) -> ";
