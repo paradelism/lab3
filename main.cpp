@@ -1,17 +1,17 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
 int main() {
-    int year;
-    cout << "Sign the year: ";
-    cin >> year;
+    double radius;
 
-    bool leap_year = (year % 4 == 0) && (year % 100 != 0 || year % 400 == 0);
+    cout << "Enter the radius of the sphere: ";
+    cin >> radius;
 
-    int days = 365 + leap_year;
+    double volume = (4.0 / 3.0) * M_PI * pow(radius, 3);
 
-    cout << "in " << year << " year = " << days << " days" << endl;
+    cout << "Volume of the sphere: " << volume << endl;
 
     return 0;
 }
